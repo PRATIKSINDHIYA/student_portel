@@ -1,48 +1,82 @@
-## Minimal UI ([Free version](https://free.minimals.cc/))
+# Student Detail Manager
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+This project is a Student Detail Manager application built with React, TypeScript, Firebase, and Material-UI. It allows users to manage student details, including adding, editing, viewing, and deleting student records.
 
-![preview](public/assets/images/minimal-free-preview.jpg)
+## Features
 
-> Free React Admin Dashboard made with Material-UI components and React + Vite.js.
+- User authentication with Firebase
+- Add, edit, view, and delete student records
+- Responsive design with Material-UI
+- Routing with React Router
 
-## Pages
+## Project Structure
 
-- [Dashboard](https://free.minimals.cc/)
-- [Users](https://free.minimals.cc/user)
-- [Products](https://free.minimals.cc/products)
-- [Blog](https://free.minimals.cc/blog)
-- [Sign in](https://free.minimals.cc/sign-in)
-- [Not found](https://free.minimals.cc/404)
+```
+. 
+├── public/ 
+│   ├── assets/ 
+│   ├── favicon.ico 
+├── src/ 
+│   ├── components/ 
+│   │   └── Sidebar.jsx 
+│   ├── pages/ 
+│   │   ├── LoginPage.jsx 
+│   │   └── StudentsPage.jsx 
+│   ├── App.jsx 
+│   ├── firebaseConfig.js 
+│   ├── index.jsx 
+│   ├── main.tsx 
+├── .eslintignore 
+├── .eslintrc.cjs 
+├── .eslintrc.json 
+├── .prettierignore 
+├── .prettier.config.mjs 
+├── package.json 
+├── tsconfig.json 
+├── tsconfig.node.json 
+├── vite.config.ts 
+├── vercel.json 
+├── README.md
+```
 
-## Quick start
+## Getting Started
 
-- Clone the repo: `git clone https://github.com/minimal-ui-kit/material-kit-react.git`
-- Recommended: `Node.js v20.x`
-- **Install:** `npm i` or `yarn install`
-- **Start:** `npm run dev` or `yarn dev`
-- **Build:** `npm run build` or `yarn build`
-- Open browser: `http://localhost:3039`
+### Prerequisites
 
-## Upgrade to PRO Version
+- Node.js 20.x
+- Yarn 1.22.22
 
-| Minimal Free                | [Minimal Pro](https://material-ui.com/store/items/minimal-dashboard/)                                   |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------ |
-| **6** Pages                 | **70+** Pages                                                                                           |
-| **Partial** theme customize | **Fully** theme customize                                                                               |
-| -                           | **Next.js** version                                                                                     |
-| -                           | **TypeScript** version (Standard Plus and Extended license)                                             |
-| -                           | Design **Figma** file (Standard Plus and Extended license)                                              |
-| -                           | Authentication with **Amplify**, **Auth0**, **JWT**, **Firebase** and **Supabase**                      |
-| -                           | Light/dark mode, right-to-left, form validation... ([+more components](https://minimals.cc/components)) |
-| -                           | Complete users flows                                                                                    |
-| -                           | 1 year of free updates / 6 months of technical support                                                  |
-| -                           | Learn more: [Package & license](https://docs.minimals.cc/package)                                       |
+### Installation
 
-## License
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/student-detail-manager.git
+   cd student-detail-manager
+   ```
 
-Distributed under the [MIT](https://github.com/minimal-ui-kit/minimal.free/blob/main/LICENSE.md) license.
+2. Install dependencies:
+   ```sh
+   yarn install
+   ```
 
-## Contact us
+3. Create a `.env` file in the root directory and add your Firebase configuration:
+   ```env
+   REACT_APP_FIREBASE_API_KEY=your_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_app_id
+   ```
 
-Email: support@minimals.cc
+4. Start the development server:
+   ```sh
+   yarn start
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+
